@@ -3,6 +3,13 @@
 Test project for refactoring experiments using [clang-tidy]
 and related tools e.g. [autotidy].
 
+## Prerequisites
+
+- C++ compiler
+- [CMake]
+- [clang-tidy]
+- [autotidy]
+
 ## Quickstart
 
 1. Run CMake to [generate] clang tooling [compile_commands.json] database
@@ -21,11 +28,15 @@ and related tools e.g. [autotidy].
     every translation unit in the [compile_commands.json] and
     displays the resulting warnings and errors.
 
-3. Run [autotidy] to start interactive refactoring sesion.
+3. Run [autotidy] to start interactive refactoring session based
+    on previously generated `clang-tidy.log`
 
-
+    ```
+    tidy clang-tidy.log
+    ```
 
 [autotidy]: https://github.com/sasq64/autotidy
 [clang-tidy]: http://clang.llvm.org/extra/clang-tidy/
+[CMake]: https://cmake.org
 [compile_commands.json]: https://clang.llvm.org/docs/JSONCompilationDatabase.html
 [generate]: https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html
