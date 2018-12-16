@@ -1,0 +1,9 @@
+---
+Checks:                 '*'
+WarningsAsErrors:       ''
+HeaderFilterRegex:      'test/.*'
+AnalyzeTemporaryDtors:  false
+FormatStyle:            mozilla
+User:                   mloskot
+...
+
