@@ -3,6 +3,8 @@
 Test project for refactoring experiments using [clang-tidy]
 and related tools e.g. [autotidy].
 
+![screenshot](screenshot.png "autotidy interactive refactoring session")
+
 ## Prerequisites
 
 - C++ compiler
